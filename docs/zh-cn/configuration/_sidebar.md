@@ -10,6 +10,7 @@
   - [通用配置](/zh-cn/configuration/base)
   - [Input插件](/zh-cn/configuration/input-plugin)
     - [AmazonKinesis [商业版]](/zh-cn/configuration/input-plugins/AmazonKinesisStream)
+    - [ElasticSearch](/zh-cn/configuration/input-plugins/Elasticsearch)
     - [FakeStream](/zh-cn/configuration/input-plugins/FakeStream)
     - [File](/zh-cn/configuration/input-plugins/File)
     - [FileStream](/zh-cn/configuration/input-plugins/FileStream)
@@ -21,10 +22,12 @@
     - [Kudu](/zh-cn/configuration/input-plugins/Kudu)
     - [MongoDB](/zh-cn/configuration/input-plugins/MongoDB)
     - [MongoDBOplogStream [商业版]](/zh-cn/configuration/input-plugins/MongoDBOplogStream)
+    - [MySQLBinlogStream[商业版]](/zh-cn/configuration/input-plugins/MySQLBinlogStream)
     - [MySQL](/zh-cn/configuration/input-plugins/MySQL)
     - [Hive](/zh-cn/configuration/input-plugins/Hive)
     - [S3Stream](/zh-cn/configuration/input-plugins/S3Stream)
     - [SocketStream](/zh-cn/configuration/input-plugins/SocketStream)
+    - [Tidb](/zh-cn/configuration/input-plugins/Tidb)
     - [阿里云DTS [商业版]](/zh-cn/configuration/input-plugins/AliyunDtsStream)
     - [阿里云SLS [商业版]](/zh-cn/configuration/input-plugins/AliyunSlsStream)
     
@@ -37,6 +40,7 @@
     - [Geoip [商业版]](/zh-cn/configuration/filter-plugins/Geoip)
     - [Grok](/zh-cn/configuration/filter-plugins/Grok)
     - [IpipNet [商业版]](/zh-cn/configuration/filter-plugins/IpipNet)
+    - [Join](/zh-cn/configuration/filter-plugins/Join)
     - [Json](/zh-cn/configuration/filter-plugins/Json)
     - [Kv](/zh-cn/configuration/filter-plugins/Kv)
     - [Lowercase](/zh-cn/configuration/filter-plugins/Lowercase)
@@ -52,7 +56,8 @@
     - [Truncate](/zh-cn/configuration/filter-plugins/Truncate)
     - [Uppercase](/zh-cn/configuration/filter-plugins/Uppercase)
     - [Uuid](/zh-cn/configuration/filter-plugins/Uuid)
-    
+    - [Watermark](/zh-cn/configuration/filter-plugins/Watermark)
+
   - [Output插件](/zh-cn/configuration/output-plugin)
     - [Clickhouse](/zh-cn/configuration/output-plugins/Clickhouse)
     - [Elasticsearch](/zh-cn/configuration/output-plugins/Elasticsearch)
@@ -65,12 +70,14 @@
     - [Kudu](/zh-cn/configuration/output-plugins/Kudu)
     - [MongoDB](/zh-cn/configuration/output-plugins/MongoDB)
     - [MySQL](/zh-cn/configuration/output-plugins/MySQL)
+    - [Opentsdb](/zh-cn/configuration/output-plugins/Opentsdb)
     - [S3](/zh-cn/configuration/output-plugins/S3)
     - [Stdout](/zh-cn/configuration/output-plugins/Stdout)
+    - [Tidb](/zh-cn/configuration/output-plugins/Tidb)
 
 - [部署与运行](/zh-cn/deployment)
 
-- [监控](/zh-cn/monitoring)
+- [监控[商业版]](/zh-cn/monitoring)
 
 - [插件开发](/zh-cn/developing-plugin)
 

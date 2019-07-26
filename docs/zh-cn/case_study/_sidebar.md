@@ -8,12 +8,14 @@
   - [如何快速地把HDFS中的数据导入ClickHouse](/zh-cn/case_study/1.md)
   - [如何快速地将Hive中的数据导入ClickHouse](/zh-cn/case_study/2.md)
   - [如何使用Spark快速将数据写入Elasticsearch](/zh-cn/case_study/3.md)
+  - [优秀的数据工程师，怎么用Spark在TiDB上做OLAP分析](/zh-cn/case_study/4.md)
+  - [新功能StructuredStreaming怎么用?](/zh-cn/case_study/5.md)
 
 - [配置](/zh-cn/configuration/base)
 
 - [部署与运行](/zh-cn/deployment)
 
-- [监控](/zh-cn/monitoring)
+- [监控[商业版]](/zh-cn/monitoring)
 
 - [插件开发](/zh-cn/developing-plugin)
 
