@@ -185,6 +185,7 @@ object Waterdrop extends Logging {
     registerTempView(staticInputs, sparkSession)
 
     // when you see this ASCII logo, waterdrop is really started.
+    // 显示waterdrop 图标
     showWaterdropAsciiLogo()
 
     if (staticInputs.nonEmpty) {
