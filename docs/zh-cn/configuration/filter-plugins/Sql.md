@@ -14,37 +14,35 @@
 | --- | --- | --- | --- |
 | [sql](#sql-string) | string | yes | - |
 | [table_name](#table_name-string) | string | no | - |
+| [common-options](#common-options-string)| string | no | - |
+
 
 ##### sql [string]
 
-SQL语句
+SQL语句，SQL中使用的表名为 `Input` 或 `Filter` 插件中配置的 `result_table_name`
 
 ##### table_name [string]
 
-如果配置了`table_name`, 代表将输入sql filter的数据流注册为一个运行时的临时表，它的表名由`table_name`指定。
-这个表可以在`sql`中使用。
+**\[从v1.4开始废弃\]**，后续 Release 版本中将删除此参数
 
-此参数主要用于将流式的数据，注册为表，之后再通过`sql`做计算。所以当`sql`中需要处理流式数据时，必须要配置此参数。
-否则会报错`Table or view not found`。
+##### common options [string]
 
-一般情况下，当input中配置了静态的数据源(Static Input)时，这些静态数据源已经在input中注册了对应的`table_name`，
-再这里不需要注册了，可直接使用。
+`Filter` 插件通用参数，详情参照 [Filter Plugin](/zh-cn/configuration/filter-plugin)
+
 
 ### Examples
 
 ```
 sql {
     sql = "select username, address from user_info",
-    table_name = "user_info"
 }
 ```
 
-> 仅保留`username`和`address`字段，将丢弃其余字段
+> 仅保留`username`和`address`字段，将丢弃其余字段。`user_info` 为之前插件配置的 `result_table_name`
 
 ```
 sql {
     sql = "select substring(telephone, 0, 10) from user_info",
-    table_name = "user_info"
 }
 ```
 
